@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bcb6jnxtpqbxs"]
+
+[ext_resource type="Texture2D" uid="uid://c18q8qewcptep" path="res://images__19_-removebg-preview.png" id="1_n1xnp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3tei5"]
+radius = 35.014282
+
+[node name="Wheat" type="Area2D" unique_id=368280337 groups=["Wheat"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=958958625]
+position = Vector2(135, -26)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_n1xnp")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1710244986]
+position = Vector2(158, 0)
+shape = SubResource("CircleShape2D_3tei5")
